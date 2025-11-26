@@ -1,0 +1,31 @@
+{
+  "name": "AppProyFin-QA-RCW",
+  "version": "1.0.0",
+  "description": "Project for Test Automation course: Vitest (unit/integration), Express, Cypress (E2E)",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "node src/server.js",
+    "start": "node src/server.js",
+    "test": "vitest",
+	"test:ci": "vitest --run",
+    "test:watch": "vitest --watch",
+    "test:coverage": "vitest run --coverage",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "vitest": "^0.34.1",
+    "supertest": "^6.3.3",
+    "cypress": "^12.17.0"
+  }
+}
